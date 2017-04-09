@@ -6,8 +6,7 @@ USE ieee.numeric_std;
 ENTITY Temporizador IS
 	PORT (	clock, enable, reset, set			:IN BIT;
 				setm1										:IN INTEGER RANGE 0 TO 9 =: 0;
-				disp0, disp1							:OUT STD_LOGIC_VECTOR (6 downto 0);
-				fim										:OUT STD_LOGIC := '0');
+				disp0, disp1							:OUT STD_LOGIC_VECTOR (6 downto 0));
 END Temporizador;
 
 
